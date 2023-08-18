@@ -1,23 +1,28 @@
+*{
+  box-sizing: border-box;
+  
+}
+ul{
+  padding:0;
+}
+
 html,body {
+  height:100%;
+  width:100%;
   font-family: poppins,Arial, Helvetica, sans-serif;
   background-color: rgb(255, 255, 255);
   /* The <body> element has a default margin of 8px
      on all sides. This removes the default margins. */
-  margin:3px 10px;
+  margin:0;
   /* padding-bottom:1200px; */
   color: #043158;
 }
 .container{
- max-width:1390px;
- /* margin-left:10px; */
- /* .container{ */
-  /* width:100%;
-  max-width: 1250px;   for Lappy screen size */ 
+   width:100%;
+   height:100%;
+   position:relative;
+ 
 }
-*{
-  box-sizing: border-box;
-}
-
 
 a:link{ 
   text-decoration: none; 
@@ -34,36 +39,47 @@ button {
   cursor: pointer;
 }
 
-.assesment-header{
+.nav{
+  /* background-color: crimson; */
   display:flex;
   flex-direction:row;
   justify-content: space-between;
   align-items: center;
+  padding: 0.2vw 2vw;
+  border-bottom: 1px solid #757575;
+  /* flex-wrap: wrap; */
 }
-
+.nav i{
+  font-weight:700;
+  font-size:1.34vw;
+  display:none;
+}
 .brand-logo{
-  width:130px;
+  width:9vw;
 }
 
-.assesment-header-right-section{
+.nav-right-section{
+  /* background-color: royalblue; */
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  gap:4vw;
+  /* justify-content: start; */
   list-style: none;
-  margin-right: 20px; 
+  /* margin-right: 20px;  */
 }
 
 .header-link{
-  margin-right:35px;
+  /* margin-right:35px;
   cursor: pointer;
-  font-size:15px;
+  font-size:15px; */
 }
 
 .hero-section{
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 58vh;
-  padding-top:10px;
+   width:100%;
+  /*height: 5vh;
+  padding-top:10px; */
   position:relative;
 }
 .banner-Heading{
@@ -77,8 +93,7 @@ right:600px;
   display:none;
 }
 .banner-image{
-  /* width:auto; */
-  object-fit: cover;
+  width:100%;
 }
 
 .what-is-para{
@@ -210,50 +225,23 @@ img.yoga-image{
   justify-content: center;
 }
 
-ul{
-  padding:0;
-}
 
-
-@media (max-width:320px){
-  .grid-image{
-    grid-template-columns: 1fr; 
-  }
-}
-
-@media (min-width:321px) and (max-width:750px){
-  .grid-image{
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width:751px) and (max-width:1920px){
-  .grid-image{
-  grid-template-columns: 1fr 1fr 1fr;
-}
-}
-
-@media (min-width:1000px){
-  .grid-image{
-    grid-template-columns: 1fr 1fr 1fr;
-}
-}
 
 /* RESPONSIVE CSS for Small Devices*/
-@media(max-width:767px){
-  .assesment-header-right-section{
-    display: none;
-  }
+@media(max-width:600px){
   .brand-logo{
-    width:60%; 
+    width:30vw; 
   }
-}
-@media(max-width:950px){
-  .invisible{
+  .nav{
+    background-color:crimson;
+  }
+  .nav i{
+    font-weight:700;
+    font-size:6vw;
     display:block;
-
   }
-  .banner-Heading{
-    display:none;
+  .nav li{
+    display: none;
+    font-size: 4vw;
   }
 }
