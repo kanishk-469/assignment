@@ -73,6 +73,9 @@ top:200px;
 right:600px;
 
 }
+.invisible{
+  display:none;
+}
 .banner-image{
   /* width:auto; */
   object-fit: cover;
@@ -234,4 +237,23 @@ ul{
   .grid-image{
     grid-template-columns: 1fr 1fr 1fr;
 }
+}
+
+/* RESPONSIVE CSS for Small Devices*/
+@media(max-width:767px){
+  .assesment-header-right-section{
+    display: none;
+  }
+  .brand-logo{
+    width:60%; 
+  }
+}
+@media(max-width:950px){
+  .invisible{
+    display:block;
+
+  }
+  .banner-Heading{
+    display:none;
+  }
 }
