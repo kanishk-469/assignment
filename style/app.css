@@ -1,0 +1,198 @@
+body {
+  font-family: poppins,Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 255, 255);
+  /* The <body> element has a default margin of 8px
+     on all sides. This removes the default margins. */
+  margin:0px;
+  /* padding-bottom:1200px; */
+  color: #043158;
+}
+.container{
+ max-width:1390px;
+ margin-left:20px;
+}
+/* <p> elements have a default margin on the top
+   and bottom. This removes the default margins. */
+p {
+  margin: 0;
+}
+h3{
+  margin:0px;
+}
+button {
+  cursor: pointer;
+}
+
+.assesment-header{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo{
+  width:130px;
+}
+
+.assesment-header-right-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  list-style: none;
+  margin-right: 20px; 
+}
+
+.header-link{
+  margin-right:35px;
+  cursor: pointer;
+  font-size:15px;
+}
+
+.hero-section{
+ position:relative;
+}
+.banner-Heading{
+position: absolute;
+left: 80px;
+top:200px;
+right:600px;
+
+}
+.banner-image{
+  /* width:auto; */
+  object-fit: cover;
+}
+
+.what-is-para{
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  margin-top:70px;
+}
+.arrow{
+  width:30px;
+  /* color:#043158; */
+}
+.Loren-heading{
+  font-size:30px;
+  margin-left:10px;
+  /* color:#043158; */
+}
+
+.sub-heading{
+  /* color:#043158; */
+  margin-top:10px;
+  font-size:15px;
+}
+
+.grid-image{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  /* column-gap:15px;
+  row-gap:15px; */
+
+}
+.jar-image{
+ border-style:solid;
+ border-width: 2px;
+ border-color:#043158;
+
+}
+.jar-div{
+  display:flex;
+  flex-direction:column;
+  justify-content: center; 
+   margin-right:20px;
+   margin-top:30px;
+}
+.jar-heading-text{
+  margin-top:10px;
+  margin-bottom:10px;
+  color:#a51e25;
+  text-align: center;
+}
+.jar-sub-heading{
+  /* color:#043158; */
+  text-align: center;
+
+}
+
+.grid-image-and-text{
+  display:grid;
+  grid-template-columns: 1fr 400px;
+  column-gap: 5px;
+  margin-top:20px;
+}
+.grid-image-and-text-2{
+  display:grid;
+  grid-template-columns:400px 1fr;
+  column-gap: 5px;
+  margin-top:70px;
+}
+
+.image-and-text-paragraph{
+  /* width:800px; */
+  margin-left:20px;
+  /* color:#043158; */
+}
+.right-spacing{
+  /* padding-right:55px; */
+  max-width: 90%;
+}
+.image-and-text-heading{
+  font-size:30px;
+  color:#a51e25;
+  font-weight:600;
+}
+.image-and-text-div{
+  
+}
+
+.image-and-text-sub-heading{
+  /* width:850px; */
+  margin-bottom:20px;
+}
+
+/* .yoga-image-div-container{
+ 
+} */
+img.yoga-image{
+  width: 325px;
+  /* height: 300px; */
+  object-fit:none;
+  /* margin-right:20px; */ 
+  
+}
+
+.footer-red-line{
+  margin-top:100px;
+  width:100%;
+  height:2px;
+  background-color: #a51e25;
+}
+
+.trademark-text{
+  /* color:#043158; */
+  margin-top:60px;
+  margin-bottom:60px;
+  text-align: center;
+}
+
+.footer-link{
+  list-style: none;
+  text-align: center;
+  color:#043158;
+  font-weight:900;
+  font-size:14px;
+}
+.policy-footer-section{
+  display:grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  justify-content: center;
+}
+a:link { text-decoration: none; }
+ul{
+  padding:0;
+}
+
