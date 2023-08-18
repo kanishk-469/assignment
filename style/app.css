@@ -1,15 +1,26 @@
-body {
+html,body {
   font-family: poppins,Arial, Helvetica, sans-serif;
   background-color: rgb(255, 255, 255);
   /* The <body> element has a default margin of 8px
      on all sides. This removes the default margins. */
-  margin:0px;
+  margin:3px 10px;
   /* padding-bottom:1200px; */
   color: #043158;
 }
 .container{
  max-width:1390px;
- margin-left:20px;
+ /* margin-left:10px; */
+ /* .container{ */
+  /* width:100%;
+  max-width: 1250px;   for Lappy screen size */ 
+}
+*{
+  box-sizing: border-box;
+}
+
+
+a:link{ 
+  text-decoration: none; 
 }
 /* <p> elements have a default margin on the top
    and bottom. This removes the default margins. */
@@ -49,7 +60,11 @@ button {
 }
 
 .hero-section{
- position:relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 58vh;
+  padding-top:10px;
+  position:relative;
 }
 .banner-Heading{
 position: absolute;
@@ -191,8 +206,32 @@ img.yoga-image{
   grid-template-columns: 150px 150px 150px 150px;
   justify-content: center;
 }
-a:link { text-decoration: none; }
+
 ul{
   padding:0;
 }
 
+
+@media (max-width:320px){
+  .grid-image{
+    grid-template-columns: 1fr; 
+  }
+}
+
+@media (min-width:321px) and (max-width:750px){
+  .grid-image{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width:751px) and (max-width:1920px){
+  .grid-image{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media (min-width:1000px){
+  .grid-image{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
