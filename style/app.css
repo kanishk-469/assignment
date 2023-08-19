@@ -1,6 +1,5 @@
 *{
   box-sizing: border-box;
-  
 }
 ul{
   padding:0;
@@ -14,6 +13,7 @@ html,body {
   /* The <body> element has a default margin of 8px
      on all sides. This removes the default margins. */
   margin:0;
+  padding:9px;
   /* padding-bottom:1200px; */
   color: #043158;
 }
@@ -79,7 +79,7 @@ button {
 .banner-Heading{
 position: absolute;
 left: 4vw;
-top:11vw;
+top:8vw;
 right:60vw;
 
 .banner-text{
@@ -120,6 +120,7 @@ right:60vw;
 }
 .Loren-heading{
   font-size:2.3vw;
+  font-weight:600;
   padding-left:1vw;
   color:#043158;
 }
@@ -131,46 +132,61 @@ right:60vw;
   font-size:1.2vw;
 }
 
-.grid-image{
+.grid-row{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  /* column-gap:15px;
-  row-gap:15px; */
+  column-gap:2vw;
 
 }
+
 .jar-image{
- border-style:solid;
+ width:100%;
+ padding:2vw;
+ /* border-style:solid;
  border-width: 2px;
- border-color:#043158;
+ border-color:#043158; */
 
 }
-.jar-div{
-  display:flex;
-  flex-direction:column;
-  justify-content: center; 
-   margin-right:20px;
-   margin-top:30px;
-}
-.jar-heading-text{
-  margin-top:10px;
-  margin-bottom:10px;
-  color:#a51e25;
+.jar{
+  margin:2vh 0px;
   text-align: center;
+}
+.jar-heading{
+  color:#a51e25;
 }
 .jar-sub-heading{
-  /* color:#043158; */
   text-align: center;
-
+  margin: 0.8vw 0vw;
 }
 
 .grid-image-and-text{
+  /* background-color:crimson; */
   display:grid;
-  grid-template-columns: 1fr 400px;
-  column-gap: 5px;
-  margin-top:20px;
+  grid-template-columns: 1fr 30vw;
+  column-gap: 1.6vw;
+  margin-top:2.8vh;
 }
+.image-and-text-div{
+  padding:2.3vw;
+}
+
+.yoga-image-div-container{
+ width:100%;
+} 
+img.yoga-image{
+  padding-top:7.2vh;
+  height:45vh;
+  width:90%;
+  object-fit: fill;
+}
+.yoga-image-div-container-invisible{
+  display:none;
+}
+
+
 .grid-image-and-text-2{
+  /* background-color:crimson; */
   display:grid;
   grid-template-columns:400px 1fr;
   column-gap: 5px;
@@ -179,50 +195,44 @@ right:60vw;
 
 .image-and-text-paragraph{
   /* width:800px; */
-  margin-left:20px;
+  margin-left:2vw;
   /* color:#043158; */
 }
 .right-spacing{
   /* padding-right:55px; */
-  max-width: 90%;
+  width: 90%;
 }
 .image-and-text-heading{
   font-size:30px;
   color:#a51e25;
   font-weight:600;
 }
-.image-and-text-div{
-  
-}
+
 
 .image-and-text-sub-heading{
   /* width:850px; */
   margin-bottom:20px;
 }
 
-/* .yoga-image-div-container{
- 
-} */
-img.yoga-image{
-  width: 325px;
-  /* height: 300px; */
-  object-fit:none;
-  /* margin-right:20px; */ 
-  
-}
 
 .footer-red-line{
-  margin-top:100px;
+  margin-top:6vw;
   width:100%;
-  height:2px;
+  height:0.5vh;
   background-color: #a51e25;
 }
 
 .trademark-text{
   /* color:#043158; */
-  margin-top:60px;
-  margin-bottom:60px;
+  margin:4vh 0vh;
   text-align: center;
+  font-size:0.9rem;
+}
+
+.policy-footer-section{
+  display:grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  justify-content: center;
 }
 
 .footer-link{
@@ -230,15 +240,19 @@ img.yoga-image{
   text-align: center;
   color:#043158;
   font-weight:900;
-  font-size:14px;
-}
-.policy-footer-section{
-  display:grid;
-  grid-template-columns: 150px 150px 150px 150px;
-  justify-content: center;
+  font-size:0.8rem;
+  margin-bottom:2vh;
 }
 
 
+/*
+Key Points for Responsive
+1)CSS Flexbox ex:-display:flex; gap;flex-wrap:wrap etc.
+2)CSS Units ex: - px,%,vw,vh,vmax,vmin,em,rem(rootem)
+3)Responsive Typography ex:- font-size:4vw
+4)Mobile-First Approach - check simaltaniously
+5)Flexible Images and Media - png,svg,jpeg, photoshop
+*/
 
 /* RESPONSIVE CSS for Small Devices*/
 @media(max-width:600px){
@@ -260,6 +274,8 @@ img.yoga-image{
 /*path-take from parent*/
   .banner-Heading{
     padding-left:1vw;
+    padding-top:12vw;
+    
   }
   .banner-Heading
   .banner-text{
@@ -287,6 +303,41 @@ img.yoga-image{
   .sub-heading{
     font-size:3vw;
   }
+  .grid-row{
+    grid-template-columns: 1fr;
+  
+  }
+ .js-grid-image-and-text-2 .grid-image-and-text-2{
+    /* background-color:crimson; */
+    grid-template-columns: 1fr;
+    
+  }
+  .js-grid-image-and-text .grid-image-and-text{
+    grid-template-columns: 1fr;
+  }
+  .js-grid-image-and-text .grid-image-and-text .yoga-image-div-container-invisible{
+    /* background-color:crimson; */
+    display:block;
+    
+  }
+  .js-grid-image-and-text .grid-image-and-text .yoga-image-div-container-invisible .yoga-image{
+    /* background-color:crimson; */
+    padding-top:7.2vh;
+    height:45vh;
+    width:100%;
+    
+  }
+  
+  .js-grid-image-and-text .grid-image-and-text .yoga-image-div-container{
+    grid-template-columns:1fr ;
+      display:none;
+  }
+
+  .hero-section .banner-image{
+    height:38vh;
+
+  }
+
 }
 @media (min-width:601px) and (max-width:970px){
   .banner-Heading h4
