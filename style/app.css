@@ -12,16 +12,25 @@ html,body {
   background-color: rgb(255, 255, 255);
   /* The <body> element has a default margin of 8px
      on all sides. This removes the default margins. */
-  margin:0;
-  padding:9px;
+  margin:0px;
+  padding:0px;
   /* padding-bottom:1200px; */
   color: #043158;
 }
 .container{
    width:100%;
    height:100%;
+   padding:0.5vw 1.6vw;
    position:relative;
  
+}
+.bottom-container{
+  width:100%;
+  /* height:100%; */
+  padding:0.5vw 1.6vw;
+  position:absolute;
+  top:95vw;
+
 }
 
 a:link{ 
@@ -180,6 +189,11 @@ img.yoga-image{
   width:90%;
   object-fit: fill;
 }
+
+.invisible-red-line{
+  display:none;
+
+}
 .yoga-image-div-container-invisible{
   display:none;
 }
@@ -256,6 +270,12 @@ Key Points for Responsive
 
 /* RESPONSIVE CSS for Small Devices*/
 @media(max-width:600px){
+  body{
+    padding:2vw;
+    /* background-color:crimson; */
+    z-index:99;
+
+  }
   .brand-logo{
     width:30vw; 
   }
@@ -320,10 +340,14 @@ Key Points for Responsive
     display:block;
     
   }
+  /* .js-grid-image-and-text .grid-image-and-text .yoga-image-div-container-invisible .yoga-image{
+    width:-20px;
+    background-color: red;
+  } */
   .js-grid-image-and-text .grid-image-and-text .yoga-image-div-container-invisible .yoga-image{
-    /* background-color:crimson; */
+    background-color:crimson;
     padding-top:7.2vh;
-    height:45vh;
+    height:50vh;
     width:100%;
     
   }
@@ -336,6 +360,15 @@ Key Points for Responsive
   .hero-section .banner-image{
     height:38vh;
 
+  }
+  .policy-footer-section{
+  display:grid;
+  grid-template-columns: 100px 1fr 1fr 100px;
+  justify-content: center;
+  }
+  .invisible-red-line{
+    display:block;
+  
   }
 
 }
