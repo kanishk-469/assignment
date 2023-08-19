@@ -5,7 +5,7 @@ ul{
   padding:0;
 }
 
-html,body {
+body {
   height:100%;
   width:100%;
   font-family: poppins,Arial, Helvetica, sans-serif;
@@ -24,14 +24,7 @@ html,body {
    position:relative;
  
 }
-.bottom-container{
-  width:100%;
-  /* height:100%; */
-  padding:0.5vw 1.6vw;
-  position:absolute;
-  top:95vw;
 
-}
 
 a:link{ 
   text-decoration: none; 
@@ -145,7 +138,7 @@ right:60vw;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  column-gap:2vw;
+  column-gap:0.3vw;
 
 }
 
@@ -155,8 +148,8 @@ right:60vw;
  /* border-style:solid;
  border-width: 2px;
  border-color:#043158; */
-
 }
+
 .jar{
   margin:2vh 0px;
   text-align: center;
@@ -206,6 +199,14 @@ img.yoga-image{
   column-gap: 5px;
   margin-top:70px;
 }
+
+.jar-image-4{
+  width:100%;
+  padding:2vw;
+  /* border-style:solid;
+  border-width: 2px;
+  border-color:#043158; */
+ }
 
 .image-and-text-paragraph{
   /* width:800px; */
@@ -270,10 +271,10 @@ Key Points for Responsive
 
 /* RESPONSIVE CSS for Small Devices*/
 @media(max-width:600px){
-  body{
-    padding:2vw;
+  .container{
+    padding:0vw 0vw;
     /* background-color:crimson; */
-    z-index:99;
+    /* z-index:99; */
 
   }
   .brand-logo{
@@ -281,6 +282,7 @@ Key Points for Responsive
   }
   .nav{
     background-color:crimson;
+    margin: 0vw 1.3vw;
   }
   .nav i{
     font-weight:700;
@@ -313,6 +315,18 @@ Key Points for Responsive
     border-radius:3px;
     color:rgb(242, 218, 218);
   }
+  .hero-section .banner-image{
+    
+    height:38vh;
+
+  }
+
+  .hero-section{
+    margin: 0vw 1.3vw;
+    width:97.4%;
+  }
+
+  
   .what-is-heading .arrow{
     width:8vw;
   }
@@ -332,6 +346,18 @@ Key Points for Responsive
     grid-template-columns: 1fr;
     
   }
+
+  .js-grid-image-and-text-2 .grid-image-and-text-2 .yoga-image-div-container
+  .jar-image-4{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    padding:0vw;
+    /
+    /* margin-left: -1vw;
+    margin-right: -1vw; */
+   }
+
   .js-grid-image-and-text .grid-image-and-text{
     grid-template-columns: 1fr;
   }
@@ -340,27 +366,27 @@ Key Points for Responsive
     display:block;
     
   }
-  /* .js-grid-image-and-text .grid-image-and-text .yoga-image-div-container-invisible .yoga-image{
-    width:-20px;
-    background-color: red;
-  } */
+  
   .js-grid-image-and-text .grid-image-and-text .yoga-image-div-container-invisible .yoga-image{
     background-color:crimson;
-    padding-top:7.2vh;
-    height:50vh;
+    padding:0vw;
+    height:30vh;
     width:100%;
+    /* position:absolute;
+    /* left:-2vw;
+    right:-1300vw; */
+    /* top:364vh; */
+    /* object-position:center; */
     
   }
+  
   
   .js-grid-image-and-text .grid-image-and-text .yoga-image-div-container{
     grid-template-columns:1fr ;
       display:none;
   }
 
-  .hero-section .banner-image{
-    height:38vh;
-
-  }
+  
   .policy-footer-section{
   display:grid;
   grid-template-columns: 100px 1fr 1fr 100px;
@@ -370,6 +396,19 @@ Key Points for Responsive
     display:block;
   
   }
+  .jar .jar-heading{
+  font-size: 6vw;
+
+  }
+  .jar .jar-sub-heading{
+    /* background-color: #a51e25; */
+    text-align: center;
+    margin: 0.8vw 0vw;
+    font-size:2vw;
+    max-width: 170vw;
+    padding:0vw 14vw;
+  }
+  
 
 }
 @media (min-width:601px) and (max-width:970px){
